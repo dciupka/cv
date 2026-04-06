@@ -229,26 +229,20 @@ section p {
 /* Print / PDF */
 @media print {
   @page {
-    margin: 1.5cm 2cm;
+    margin: 1.8cm 2cm;
     size: A4;
   }
 
-  :root {
-    --bg: #fff;
-    --surface: #f6f8fa;
-    --border: #d0d7de;
-    --accent: #0969da;
-    --accent-muted: #0969da;
-    --text: #1f2328;
-    --text-muted: #57606a;
-    --tag-bg: #f0f0f0;
-    --tag-border: #d0d7de;
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   body {
     background: #fff;
-    color: #1f2328;
-    font-size: 11pt;
+    color: #111;
+    font-size: 10.5pt;
+    line-height: 1.5;
     padding: 0;
   }
 
@@ -260,20 +254,138 @@ section p {
     max-width: 100%;
   }
 
-  .project,
-  .skill-group {
-    break-inside: avoid;
+  /* Header */
+  header {
+    border-bottom: 2px solid #111;
+    padding-bottom: 0.8rem;
+    margin-bottom: 1.2rem;
+  }
+
+  header h1 {
+    font-size: 22pt;
+    color: #111;
+  }
+
+  .title {
+    font-size: 9pt;
+    color: #444;
+    letter-spacing: 2px;
+  }
+
+  .tagline {
+    color: #555;
+    font-size: 10pt;
+    margin-top: 0.3rem;
+  }
+
+  .contact {
+    margin-top: 0.5rem;
+    gap: 1.5rem;
   }
 
   .contact a {
     border: none;
     padding: 0;
-    color: var(--accent);
+    color: #1a56db;
+    font-size: 9.5pt;
+  }
+
+  /* Sections */
+  section {
+    margin-bottom: 1.2rem;
+  }
+
+  section h2 {
+    font-size: 7.5pt;
+    letter-spacing: 2.5px;
+    color: #555;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.7rem;
+  }
+
+  section p {
+    color: #333;
+    font-size: 10pt;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Tags */
+  .tag-list {
+    gap: 0.35rem;
+  }
+
+  .tag-list li {
+    background: #f3f4f6;
+    border: 1px solid #d1d5db;
+    color: #111;
+    font-size: 8.5pt;
+    padding: 0.1rem 0.5rem;
+    border-radius: 3px;
+  }
+
+  /* Projects — no card boxes, clean list */
+  .project {
+    background: none;
+    border: none;
+    border-left: 3px solid #1a56db;
+    border-radius: 0;
+    padding: 0.1rem 0 0.1rem 0.75rem;
+    margin-bottom: 0.65rem;
+    break-inside: avoid;
+  }
+
+  .project h3 {
+    font-size: 10.5pt;
+    color: #111;
+    margin-bottom: 0.2rem;
+  }
+
+  .project ul {
+    color: #444;
+    font-size: 9.5pt;
+    padding-left: 1rem;
+  }
+
+  .project ul li {
+    margin-bottom: 0.1rem;
+  }
+
+  /* Skills */
+  .skills-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+  }
+
+  .skill-group {
+    background: #f8f9fa;
+    border: 1px solid #e2e4e8;
+    border-radius: 3px;
+    padding: 0.4rem 0.6rem;
+    break-inside: avoid;
+  }
+
+  .skill-group h4 {
+    font-size: 7.5pt;
+    color: #1a56db;
+    margin-bottom: 0.3rem;
+  }
+
+  .skill-group ul {
+    font-size: 8.5pt;
+    color: #333;
+  }
+
+  /* Mindset */
+  .mindset-items {
+    gap: 0.4rem;
   }
 
   .mindset-items span {
-    background: #f0f0f0;
-    border-color: #d0d7de;
-    color: #0969da;
+    background: #f0f4ff;
+    border: 1px solid #c7d7fd;
+    color: #1a56db;
+    font-size: 8.5pt;
+    padding: 0.2rem 0.6rem;
   }
 }
