@@ -33,8 +33,33 @@ body {
 /* Header */
 header {
   border-bottom: 1px solid var(--border);
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   margin-bottom: 2.5rem;
+}
+
+.header-main {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.header-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.header-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.header-stats img {
+  height: 120px;
+  border-radius: 6px;
+  display: block;
 }
 
 header h1 {
@@ -194,22 +219,11 @@ section p {
   font-weight: 500;
 }
 
-/* GitHub Activity */
-.github-stats {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-bottom: 1rem;
-}
-
-.github-stats img {
-  height: 150px;
-  border-radius: 6px;
-}
-
+/* Snake banner */
 .snake {
   width: 100%;
   border-radius: 6px;
+  display: block;
 }
 
 /* Print button */
@@ -234,9 +248,18 @@ section p {
 }
 
 /* Responsive */
-@media (max-width: 500px) {
+@media (max-width: 640px) {
   header h1 {
     font-size: 1.6rem;
+  }
+
+  .header-main {
+    flex-direction: column;
+  }
+
+  .header-stats {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .skills-grid {
@@ -268,7 +291,8 @@ section p {
     display: none;
   }
 
-  .github-activity {
+  .header-stats,
+  .snake {
     display: none;
   }
 
