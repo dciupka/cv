@@ -58,16 +58,6 @@ header {
   align-items: flex-start;
 }
 
-/* GitHub avatar */
-.avatar {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  border: 2px solid var(--border);
-  flex-shrink: 0;
-  object-fit: cover;
-}
-
 .header-text {
   flex: 1;
   min-width: 0;
@@ -307,8 +297,7 @@ section p {
 
   .print-btn,
   .snake-banner,
-  .header-stats,
-  .avatar {
+  .header-stats {
     display: none;
   }
 
