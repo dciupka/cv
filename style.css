@@ -194,6 +194,27 @@ section p {
   font-weight: 500;
 }
 
+/* Print button */
+.print-btn {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: var(--accent-muted);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.1rem;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 100;
+  transition: background 0.15s;
+}
+
+.print-btn:hover {
+  background: var(--accent);
+}
+
 /* Responsive */
 @media (max-width: 500px) {
   header h1 {
@@ -202,5 +223,57 @@ section p {
 
   .skills-grid {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Print / PDF */
+@media print {
+  @page {
+    margin: 1.5cm 2cm;
+    size: A4;
+  }
+
+  :root {
+    --bg: #fff;
+    --surface: #f6f8fa;
+    --border: #d0d7de;
+    --accent: #0969da;
+    --accent-muted: #0969da;
+    --text: #1f2328;
+    --text-muted: #57606a;
+    --tag-bg: #f0f0f0;
+    --tag-border: #d0d7de;
+  }
+
+  body {
+    background: #fff;
+    color: #1f2328;
+    font-size: 11pt;
+    padding: 0;
+  }
+
+  .print-btn {
+    display: none;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .project,
+  .skill-group {
+    break-inside: avoid;
+  }
+
+  .contact a {
+    border: none;
+    padding: 0;
+    color: var(--accent);
+  }
+
+  .mindset-items span {
+    background: #f0f0f0;
+    border-color: #d0d7de;
+    color: #0969da;
   }
 }
