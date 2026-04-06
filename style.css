@@ -25,18 +25,19 @@ body {
   padding: 0;
 }
 
-/* Snake banner — centered between header and content */
+/* Snake banner — top, centered */
 .snake-banner {
-  margin-bottom: 2.5rem;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 1rem 0;
   line-height: 0;
 }
 
 .snake-banner img {
+  max-width: 860px;
   width: 100%;
   display: block;
+  border-radius: 8px;
 }
 
 .container {
