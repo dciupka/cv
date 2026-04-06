@@ -3,141 +3,232 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dawid Ciupka — DevOps / Platform Engineer. Kubernetes, Docker, CI/CD, Python, MQTT, IoT." />
   <title>Dawid Ciupka — DevOps / Platform Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <div class="snake-banner">
+    <img src="snake.svg" alt="GitHub contribution activity" />
+  </div>
+
   <a class="print-btn" href="dawid-ciupka-cv.pdf" download="dawid-ciupka-cv.pdf">Download PDF</a>
 
-  <div class="container">
+  <div class="page-wrapper">
 
-    <div class="snake-banner">
-      <img src="snake.svg" alt="GitHub contributions" />
-    </div>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
 
-    <header>
-      <div class="header-main">
-        <div class="header-text">
-          <h1>Dawid Ciupka</h1>
-          <p class="title">DevOps / Platform Engineer</p>
-          <p class="tagline">I build systems, automate everything, and make infrastructure actually work.</p>
-          <div class="contact">
-            <a href="mailto:dawidciupka@gmail.com">dawidciupka@gmail.com</a>
-            <a href="https://github.com/dciupka" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/dawid-ciupka" target="_blank">LinkedIn</a>
+      <div class="profile">
+        <img src="photo.jpg" alt="Dawid Ciupka" class="photo" onerror="this.style.display='none'" />
+        <h1 class="name">Dawid Ciupka</h1>
+        <p class="role">DevOps / Platform Engineer</p>
+      </div>
+
+      <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="HORIZONTAL" data-vanity="dawid-ciupka" data-version="v1">
+        <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/dawid-ciupka" target="_blank">Dawid Ciupka</a>
+      </div>
+
+      <section class="sidebar-section">
+        <h2 class="sidebar-title">Contact</h2>
+        <ul class="contact-list">
+          <li><span class="contact-label">Email</span><a href="mailto:dawidciupka@gmail.com">dawidciupka@gmail.com</a></li>
+          <li><span class="contact-label">Phone</span><a href="tel:+48794219389">+48 794 219 389</a></li>
+          <li><span class="contact-label">GitHub</span><a href="https://github.com/dciupka" target="_blank">dciupka</a></li>
+          <li><span class="contact-label">LinkedIn</span><a href="https://www.linkedin.com/in/dawid-ciupka" target="_blank">dawid-ciupka</a></li>
+          <li><span class="contact-label">Web</span><a href="https://dawidciupka.pl/" target="_blank">dawidciupka.pl</a></li>
+        </ul>
+      </section>
+
+      <section class="sidebar-section">
+        <h2 class="sidebar-title">Skills</h2>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Infrastructure</h3>
+          <div class="skill-tags">
+            <span>Kubernetes</span><span>Rancher</span><span>Docker</span><span>Terraform</span>
           </div>
-          <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="HORIZONTAL" data-vanity="dawid-ciupka" data-version="v1">
-            <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/dawid-ciupka" target="_blank">Dawid Ciupka</a>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">CI/CD &amp; Automation</h3>
+          <div class="skill-tags">
+            <span>GitHub Actions</span><span>Bash</span><span>Linux</span>
           </div>
         </div>
-      </div>
-    </header>
 
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Development</h3>
+          <div class="skill-tags">
+            <span>Python</span><span>Django</span><span>REST API</span><span>PostgreSQL</span>
+          </div>
+        </div>
 
-    <section>
-      <h2>Summary</h2>
-      <p>DevOps / Platform Engineer with hands-on experience building and operating real-world infrastructure. I work at the intersection of systems, automation, and software — from Kubernetes clusters to embedded hardware.</p>
-      <ul class="tag-list">
-        <li>Kubernetes (Rancher, self-hosted)</li>
-        <li>Docker &amp; containerization</li>
-        <li>Linux (Debian/Ubuntu)</li>
-        <li>Networking (DNS, TCP/IP, reverse proxy)</li>
-        <li>CI/CD (GitHub Actions)</li>
-        <li>Infrastructure as Code (Terraform)</li>
-        <li>Python, Bash, Django</li>
-        <li>MQTT &amp; IoT integration</li>
-        <li>Embedded systems (Raspberry Pi, Teensy)</li>
-      </ul>
-    </section>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Networking</h3>
+          <div class="skill-tags">
+            <span>DNS</span><span>TCP/IP</span><span>Reverse Proxy</span><span>MQTT</span>
+          </div>
+        </div>
 
-    <section>
-      <h2>Projects</h2>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Embedded / IoT</h3>
+          <div class="skill-tags">
+            <span>Raspberry Pi</span><span>Teensy</span><span>MQTT</span>
+          </div>
+        </div>
 
-      <div class="project">
-        <h3>Kubernetes Cluster (Rancher)</h3>
-        <ul>
-          <li>Built and managed self-hosted Kubernetes cluster</li>
-          <li>Deployed and maintained production applications</li>
-          <li>Debugged networking and container-level issues</li>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Industrial</h3>
+          <div class="skill-tags">
+            <span>PLC (Allen Bradley)</span><span>Siemens</span><span>Autodesk Inventor</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="sidebar-section">
+        <h2 class="sidebar-title">Languages</h2>
+        <ul class="lang-list">
+          <li><span>Polish</span><span class="lang-level">Native</span></li>
+          <li><span>English</span><span class="lang-level">Professional</span></li>
         </ul>
-      </div>
+      </section>
 
-      <div class="project">
-        <h3>Smart Shutters System</h3>
-        <ul>
-          <li>Fullstack application — Django backend, JavaScript frontend</li>
-          <li>MQTT-based communication with physical devices</li>
-          <li>End-to-end home automation system</li>
-        </ul>
-      </div>
+    </aside>
 
-      <div class="project">
-        <h3>Hardware Random Generator (Teensy)</h3>
-        <ul>
-          <li>Entropy generated on microcontroller hardware</li>
-          <li>USB interface, migrating to Ethernet</li>
-          <li>Backend integration layer</li>
-        </ul>
-      </div>
-    </section>
+    <!-- MAIN CONTENT -->
+    <main class="main">
 
-    <section>
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-group">
-          <h4>Infrastructure</h4>
-          <ul>
-            <li>Kubernetes, Rancher</li>
-            <li>Docker</li>
-            <li>Terraform</li>
-          </ul>
+      <section class="section">
+        <h2 class="section-title">About</h2>
+        <p class="about-text">
+          DevOps / Platform Engineer with a background in Industrial Automation. I build and operate real infrastructure —
+          self-hosted Kubernetes clusters, CI/CD pipelines, IoT integrations, and embedded systems.
+          I work at the intersection of systems engineering and software, bridging the gap between hardware and cloud-native tooling.
+        </p>
+        <p class="about-text">
+          Previously a PLC programmer (Allen Bradley, Siemens) and mechanical designer (Autodesk Inventor),
+          now focused on Kubernetes, Docker, Python, MQTT and making infrastructure actually work.
+        </p>
+        <div class="mindset-pills">
+          <span>Automate first</span>
+          <span>Build real things</span>
+          <span>Hands-on engineering</span>
+          <span>No bullshit, only working systems</span>
         </div>
-        <div class="skill-group">
-          <h4>CI/CD &amp; Automation</h4>
-          <ul>
-            <li>GitHub Actions</li>
-            <li>Bash scripting</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h4>Systems &amp; Networking</h4>
-          <ul>
-            <li>Linux (Debian/Ubuntu)</li>
-            <li>DNS, TCP/IP, Routing</li>
-            <li>Reverse proxy</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h4>Development</h4>
-          <ul>
-            <li>Python, Django</li>
-            <li>Bash</li>
-            <li>REST APIs</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h4>Embedded / IoT</h4>
-          <ul>
-            <li>MQTT</li>
-            <li>Raspberry Pi</li>
-            <li>Teensy (microcontroller)</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="mindset">
-      <h2>Mindset</h2>
-      <div class="mindset-items">
-        <span>Automate first</span>
-        <span>Build real things</span>
-        <span>Hands-on engineering</span>
-        <span>No bullshit, only working systems</span>
-      </div>
-    </section>
+      <section class="section">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-date">2022 – Present</div>
+            <div class="timeline-body">
+              <h3 class="timeline-role">DevOps / Platform Engineer</h3>
+              <p class="timeline-company">Self-employed / Freelance</p>
+              <ul class="timeline-list">
+                <li>Built and operated self-hosted Kubernetes cluster (Rancher)</li>
+                <li>Developed IoT and home automation systems (Django, MQTT)</li>
+                <li>Implemented CI/CD pipelines with GitHub Actions</li>
+                <li>Integrated embedded hardware (Raspberry Pi, Teensy) with backend services</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">2018 – 2022</div>
+            <div class="timeline-body">
+              <h3 class="timeline-role">Industrial Automation Engineer</h3>
+              <p class="timeline-company">— (add company name) —</p>
+              <ul class="timeline-list">
+                <li>Programmed PLCs: Allen Bradley (Studio 5000), Siemens (TIA Portal)</li>
+                <li>Mechanical design and documentation in Autodesk Inventor</li>
+                <li>Commissioning and troubleshooting of industrial automation systems</li>
+                <li>HMI development and SCADA integration</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects">
+
+          <div class="project-card">
+            <h3 class="project-title">Kubernetes Cluster (Rancher)</h3>
+            <div class="project-meta">
+              <div class="meta-row"><span class="meta-label">Problem</span><span>No reliable, self-hosted platform for deploying and managing containerized applications at home/lab scale.</span></div>
+              <div class="meta-row"><span class="meta-label">Solution</span><span>Built a multi-node Kubernetes cluster managed via Rancher. Deployed production-grade workloads with persistent storage, ingress, and monitoring.</span></div>
+              <div class="meta-row"><span class="meta-label">Stack</span>
+                <span class="tag-inline">Kubernetes</span>
+                <span class="tag-inline">Rancher</span>
+                <span class="tag-inline">Docker</span>
+                <span class="tag-inline">Linux</span>
+              </div>
+              <div class="meta-row"><span class="meta-label">Result</span><span>Stable cluster running multiple services. Full control over infrastructure with zero cloud dependency.</span></div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h3 class="project-title">Smart Shutters System</h3>
+            <div class="project-meta">
+              <div class="meta-row"><span class="meta-label">Problem</span><span>Manual window shutters — no scheduling, no remote control, no integration with smart home.</span></div>
+              <div class="meta-row"><span class="meta-label">Solution</span><span>Fullstack app with Django REST backend and JavaScript frontend. Physical shutters controlled via MQTT messages to embedded devices.</span></div>
+              <div class="meta-row"><span class="meta-label">Stack</span>
+                <span class="tag-inline">Django</span>
+                <span class="tag-inline">MQTT</span>
+                <span class="tag-inline">JavaScript</span>
+                <span class="tag-inline">Raspberry Pi</span>
+                <span class="tag-inline">Docker</span>
+              </div>
+              <div class="meta-row"><span class="meta-label">Result</span><span>End-to-end home automation: web UI + physical device control + scheduling. Fully self-hosted.</span></div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h3 class="project-title">AI Camera (Raspberry Pi)</h3>
+            <div class="project-meta">
+              <div class="meta-row"><span class="meta-label">Problem</span><span>Need for real-time AI image processing at the edge, without relying on cloud APIs.</span></div>
+              <div class="meta-row"><span class="meta-label">Solution</span><span>USB camera emulator that intercepts the video stream, applies AI transformations on-device, and outputs a processed feed — transparent to applications.</span></div>
+              <div class="meta-row"><span class="meta-label">Stack</span>
+                <span class="tag-inline">Python</span>
+                <span class="tag-inline">Raspberry Pi</span>
+                <span class="tag-inline">OpenCV</span>
+                <span class="tag-inline">Linux</span>
+              </div>
+              <div class="meta-row"><span class="meta-label">Result</span><span>Edge AI processing with no cloud dependency. Low-latency real-time video transformation.</span></div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h3 class="project-title">Hardware Random Generator (Teensy)</h3>
+            <div class="project-meta">
+              <div class="meta-row"><span class="meta-label">Problem</span><span>Software PRNGs are not truly random — insufficient for cryptographic or security-sensitive use cases.</span></div>
+              <div class="meta-row"><span class="meta-label">Solution</span><span>Microcontroller-based entropy source using hardware noise. Data exposed via USB interface (migrating to Ethernet) and consumed by backend services.</span></div>
+              <div class="meta-row"><span class="meta-label">Stack</span>
+                <span class="tag-inline">Teensy</span>
+                <span class="tag-inline">C++</span>
+                <span class="tag-inline">Python</span>
+                <span class="tag-inline">USB/Ethernet</span>
+              </div>
+              <div class="meta-row"><span class="meta-label">Result</span><span>True hardware entropy source integrated with software backend.</span></div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
 
   </div>
+
+  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+
 </body>
 </html>
