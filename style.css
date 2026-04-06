@@ -194,6 +194,24 @@ section p {
   font-weight: 500;
 }
 
+/* GitHub Activity */
+.github-stats {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.github-stats img {
+  height: 150px;
+  border-radius: 6px;
+}
+
+.snake {
+  width: 100%;
+  border-radius: 6px;
+}
+
 /* Print button */
 .print-btn {
   position: fixed;
@@ -247,6 +265,10 @@ section p {
   }
 
   .print-btn {
+    display: none;
+  }
+
+  .github-activity {
     display: none;
   }
 
