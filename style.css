@@ -401,8 +401,9 @@ section p {
     display: block;
   }
 
-  .screen-only {
-    display: none;
+  .screen-only,
+  .header-text.screen-only {
+    display: none !important;
   }
 
   .container {
