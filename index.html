@@ -242,7 +242,7 @@
 
   <script>
     const toggle = document.getElementById('langToggle');
-    let lang = localStorage.getItem('cv-lang') || 'en';
+    let lang = 'en';
 
     function applyLang(l) {
       document.querySelectorAll('[data-en]').forEach(el => {
@@ -250,11 +250,7 @@
       });
       document.documentElement.lang = l;
       toggle.textContent = l === 'en' ? 'PL' : 'EN';
-      localStorage.setItem('cv-lang', l);
     }
-
-    // apply on load if saved
-    if (lang === 'pl') applyLang('pl');
 
     toggle.addEventListener('click', () => {
       lang = lang === 'en' ? 'pl' : 'en';
