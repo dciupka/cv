@@ -261,11 +261,26 @@ section p {
   font-weight: 500;
 }
 
-/* Print button */
-.print-btn {
+/* Screen/print visibility helpers */
+.print-only {
+  display: none;
+}
+
+.screen-only {
+  display: block;
+}
+
+/* Top controls (Download + Lang toggle) */
+.top-controls {
   position: fixed;
   top: 1rem;
   right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  z-index: 100;
+}
+
+.print-btn {
   background: var(--accent-muted);
   color: #fff;
   text-decoration: none;
@@ -273,12 +288,29 @@ section p {
   border-radius: 5px;
   font-size: 0.82rem;
   font-weight: 600;
-  z-index: 100;
   transition: background 0.15s;
 }
 
 .print-btn:hover {
   background: var(--accent);
+}
+
+.lang-btn {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent-muted);
+  padding: 0.5rem 0.85rem;
+  border-radius: 5px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  font-family: inherit;
+}
+
+.lang-btn:hover {
+  background: var(--accent-muted);
+  color: #fff;
 }
 
 /* Responsive */
@@ -326,8 +358,16 @@ section p {
     padding: 0;
   }
 
-  .print-btn,
+  .top-controls,
   .snake-banner {
+    display: none;
+  }
+
+  .print-only {
+    display: block;
+  }
+
+  .screen-only {
     display: none;
   }
 
