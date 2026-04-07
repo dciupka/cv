@@ -9,7 +9,11 @@
 </head>
 <body>
 
-  <a class="print-btn" href="dawid-ciupka-cv.pdf" download="dawid-ciupka-cv.pdf">Download PDF</a>
+  <div class="top-controls">
+    <a class="print-btn" href="dawid-ciupka-cv.pdf" download="dawid-ciupka-cv.pdf"
+       data-en="Download PDF" data-pl="Pobierz PDF">Download PDF</a>
+    <button class="lang-btn" id="langToggle">PL</button>
+  </div>
 
   <div class="container">
 
@@ -20,22 +24,33 @@
     <header>
       <div class="header-main">
         <div class="header-text">
-          <h1>Dawid Ciupka</h1>
-          <p class="title">DevOps / Platform Engineer</p>
-          <p class="tagline">I build systems, automate everything, and make infrastructure actually work.</p>
+          <div class="screen-only">
+            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="dawid-ciupka" data-version="v1">
+              <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/dawid-ciupka" target="_blank"></a>
+            </div>
+          </div>
+          <div class="print-only">
+            <h1>Dawid Ciupka</h1>
+            <p class="title">DevOps / Platform Engineer</p>
+          </div>
+          <p class="tagline"
+             data-en="I build systems, automate everything, and make infrastructure actually work."
+             data-pl="Buduję systemy, automatyzuję wszystko i sprawiam, że infrastruktura faktycznie działa.">
+            I build systems, automate everything, and make infrastructure actually work.
+          </p>
           <div class="contact">
+            <a href="https://dciupka.github.io/cv/" 
+   target="_blank" 
+   class="print-only" 
+   data-en="Interactive Portfolio & Projects" 
+   data-pl="Interaktywne Portfolio i Projekty">
+   Interactive Portfolio & Projects
+</a>
+            <a href="https://github.com/dciupka" target="_blank">GitHub</a>
             <a href="mailto:dawidciupka@gmail.com">dawidciupka@gmail.com</a>
             <a href="tel:+48794219389">+48 794 219 389</a>
-            <a href="https://github.com/dciupka" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/dawid-ciupka" target="_blank">LinkedIn</a>
-            <a href="https://dawidciupka.pl/" target="_blank">dawidciupka.pl</a>
+            <a href="https://www.linkedin.com/in/dawid-ciupka" target="_blank" class="print-only">LinkedIn</a>
           </div>
-          <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="HORIZONTAL" data-vanity="dawid-ciupka" data-version="v1">
-            <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/dawid-ciupka" target="_blank">Dawid Ciupka</a>
-          </div>
-        </div>
-        <div class="header-photo">
-          <img src="photo.jpg" alt="Dawid Ciupka" onerror="this.style.display='none'" />
         </div>
       </div>
     </header>
@@ -43,103 +58,76 @@
     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
     <section>
-      <h2>About</h2>
-      <p>DevOps / Platform Engineer with a background in Industrial Automation. I build and operate real infrastructure —
+      <h2 data-en="About" data-pl="O mnie">About</h2>
+      <p data-en="DevOps / Platform Engineer with a background in Industrial Automation. I build and operate real infrastructure — self-hosted Kubernetes clusters, CI/CD pipelines, IoT integrations, and embedded systems. I work at the intersection of systems engineering and software, bridging the gap between hardware and cloud-native tooling."
+         data-pl="Inżynier DevOps / Platform z doświadczeniem w automatyce przemysłowej. Buduję i utrzymuję realną infrastrukturę — własne klastry Kubernetes, pipeline'y CI/CD, integracje IoT i systemy wbudowane. Działam na styku inżynierii systemowej i oprogramowania, łącząc sprzęt z narzędziami chmurowymi.">
+        DevOps / Platform Engineer with a background in Industrial Automation. I build and operate real infrastructure —
         self-hosted Kubernetes clusters, CI/CD pipelines, IoT integrations, and embedded systems.
-        I work at the intersection of systems engineering and software, bridging the gap between hardware and cloud-native tooling.</p>
-      <p>Previously a PLC programmer (Allen Bradley, Siemens) and mechanical designer (Autodesk Inventor),
-        now focused on Kubernetes, Docker, Python, MQTT and making infrastructure actually work.</p>
+        I work at the intersection of systems engineering and software, bridging the gap between hardware and cloud-native tooling.
+      </p>
+      <p data-en="Previously a PLC programmer (Allen Bradley, Siemens) and mechanical designer (Autodesk Inventor), now focused on Kubernetes, Docker, Python, MQTT and making infrastructure actually work."
+         data-pl="Wcześniej programista PLC (Allen Bradley, Siemens) i konstruktor mechaniczny (Autodesk Inventor), teraz skupiony na Kubernetes, Docker, Python, MQTT i budowaniu infrastruktury, która po prostu działa.">
+        Previously a PLC programmer (Allen Bradley, Siemens) and mechanical designer (Autodesk Inventor),
+        now focused on Kubernetes, Docker, Python, MQTT and making infrastructure actually work.
+      </p>
       <div class="mindset-items" style="margin-top: 1rem;">
-        <span>Automate first</span>
-        <span>Build real things</span>
-        <span>Hands-on engineering</span>
-        <span>No bullshit, only working systems</span>
+        <span data-en="Automate first" data-pl="Najpierw automatyzacja">Automate first</span>
+        <span data-en="Build real things" data-pl="Buduję realne rzeczy">Build real things</span>
+        <span data-en="Hands-on engineering" data-pl="Praktyczna inżynieria">Hands-on engineering</span>
+        <span data-en="No bullshit, only working systems" data-pl="Bez bullshitu, tylko działające systemy">No bullshit, only working systems</span>
       </div>
     </section>
 
     <section>
-      <h2>Experience</h2>
+      <h2 data-en="Projects" data-pl="Projekty">Projects</h2>
 
       <div class="project">
-        <div class="exp-header">
-          <h3>DevOps / Platform Engineer</h3>
-          <span class="exp-date">2022 – Present</span>
-        </div>
-        <p class="exp-company">Self-employed / Freelance</p>
+        <h3>Kubernetes Cluster (Rancher & HA)</h3>
         <ul>
-          <li>Built and operated self-hosted Kubernetes cluster (Rancher)</li>
-          <li>Developed IoT and home automation systems (Django, MQTT)</li>
-          <li>Implemented CI/CD pipelines with GitHub Actions</li>
-          <li>Integrated embedded hardware (Raspberry Pi, Teensy) with backend services</li>
-        </ul>
-      </div>
-
-      <div class="project">
-        <div class="exp-header">
-          <h3>Industrial Automation Engineer</h3>
-          <span class="exp-date">2018 – 2022</span>
-        </div>
-        <p class="exp-company">— (add company name) —</p>
-        <ul>
-          <li>Programmed PLCs: Allen Bradley (Studio 5000), Siemens (TIA Portal)</li>
-          <li>Mechanical design and documentation in Autodesk Inventor</li>
-          <li>Commissioning and troubleshooting of industrial automation systems</li>
-          <li>HMI development and SCADA integration</li>
-        </ul>
-      </div>
-
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-
-      <div class="project">
-        <h3>Kubernetes Cluster (Rancher)</h3>
-        <ul>
-          <li><strong>Problem:</strong> No reliable, self-hosted platform for deploying containerized applications at home/lab scale.</li>
-          <li><strong>Solution:</strong> Built a multi-node Kubernetes cluster managed via Rancher. Deployed production-grade workloads with persistent storage, ingress, and monitoring.</li>
-          <li><strong>Stack:</strong> Kubernetes · Rancher · Docker · Linux</li>
-          <li><strong>Result:</strong> Stable cluster running multiple services. Full control over infrastructure with zero cloud dependency.</li>
+          <li><strong data-en="Problem:" data-pl="Problem:">Problem:</strong> <span data-en="Need for a production-grade, highly available local environment to orchestrate microservices and IoT workloads without recurring cloud costs." data-pl="Potrzeba produkcyjnej klasy, wysokodostępnego środowiska lokalnego do orkiestracji mikroserwisów i zadań IoT bez stałych kosztów chmurowych.">Need for a production-grade, highly available local environment to orchestrate microservices and IoT workloads without recurring cloud costs.</span></li>
+          <li><strong data-en="Solution:" data-pl="Rozwiązanie:">Solution:</strong> <span data-en="Designed and deployed a multi-node K8s cluster using Rancher for management. Implemented MetalLB for Load Balancing, Longhorn for distributed block storage, and Traefik as Ingress Controller. Integrated Prometheus and Grafana for full-stack observability." data-pl="Zaprojektowałem i wdrożyłem wielowęzłowy klaster K8s zarządzany przez Rancher. Zaimplementowałem MetalLB jako Load Balancer, Longhorn dla rozproszonego storage'u oraz Traefik jako Ingress Controller. Zintegrowałem system z Prometheus i Grafana dla pełnej obserwowalności.">Designed and deployed a multi-node K8s cluster using Rancher for management. Implemented MetalLB for Load Balancing, Longhorn for distributed block storage, and Traefik as Ingress Controller. Integrated Prometheus and Grafana for full-stack observability.</span></li>
+          <li><strong data-en="Stack:" data-pl="Stack:">Stack:</strong> Kubernetes · Rancher · Longhorn · MetalLB · Prometheus · Grafana · Docker</li>
+          <li><strong data-en="Result:" data-pl="Wynik:">Result:</strong> <span data-en="A resilient, self-healing infrastructure hosting 20+ services. Successfully automated deployment workflows via CI/CD, achieving 99.9% uptime for local services." data-pl="Odporna, samonaprawialna infrastruktura hostująca ponad 20 serwisów. Skutecznie zautomatyzowane procesy wdrożeniowe przez CI/CD, osiągając 99.9% dostępności lokalnych usług.">A resilient, self-healing infrastructure hosting 20+ services. Successfully automated deployment workflows via CI/CD, achieving 99.9% uptime for local services.</span></li>
         </ul>
       </div>
 
       <div class="project">
         <h3>Smart Shutters System</h3>
         <ul>
-          <li><strong>Problem:</strong> Manual window shutters — no scheduling, no remote control, no smart home integration.</li>
-          <li><strong>Solution:</strong> Fullstack app with Django REST backend and JavaScript frontend. Physical shutters controlled via MQTT messages to embedded devices.</li>
-          <li><strong>Stack:</strong> Django · MQTT · JavaScript · Raspberry Pi · Docker</li>
-          <li><strong>Result:</strong> End-to-end home automation: web UI + physical device control + scheduling. Fully self-hosted.</li>
+          <li><strong data-en="Problem:" data-pl="Problem:">Problem:</strong> <span data-en="Manual window shutters — no scheduling, no remote control, no smart home integration." data-pl="Ręczne rolety okienne — brak harmonogramowania, zdalnego sterowania i integracji z inteligentnym domem.">Manual window shutters — no scheduling, no remote control, no smart home integration.</span></li>
+          <li><strong data-en="Solution:" data-pl="Rozwiązanie:">Solution:</strong> <span data-en="Fullstack app with Django REST backend and JavaScript frontend. Physical shutters controlled via MQTT messages to embedded devices." data-pl="Aplikacja fullstack z backendem Django REST i frontendem JavaScript. Fizyczne rolety sterowane przez wiadomości MQTT do urządzeń wbudowanych.">Fullstack app with Django REST backend and JavaScript frontend. Physical shutters controlled via MQTT messages to embedded devices.</span></li>
+          <li><strong data-en="Stack:" data-pl="Stack:">Stack:</strong> Django · MQTT · JavaScript · Raspberry Pi · Docker</li>
+          <li><strong data-en="Result:" data-pl="Wynik:">Result:</strong> <span data-en="End-to-end home automation: web UI + physical device control + scheduling. Fully self-hosted." data-pl="Kompleksowa automatyka domowa: interfejs webowy + sterowanie fizycznym urządzeniem + harmonogramowanie. W pełni self-hosted.">End-to-end home automation: web UI + physical device control + scheduling. Fully self-hosted.</span></li>
         </ul>
       </div>
 
       <div class="project">
         <h3>AI Camera (Raspberry Pi)</h3>
         <ul>
-          <li><strong>Problem:</strong> Need for real-time AI image processing at the edge, without relying on cloud APIs.</li>
-          <li><strong>Solution:</strong> USB camera emulator that intercepts the video stream, applies AI transformations on-device, and outputs a processed feed — transparent to applications.</li>
-          <li><strong>Stack:</strong> Python · Raspberry Pi · OpenCV · Linux</li>
-          <li><strong>Result:</strong> Edge AI processing with no cloud dependency. Low-latency real-time video transformation.</li>
+          <li><strong data-en="Problem:" data-pl="Problem:">Problem:</strong> <span data-en="Need for real-time AI image processing at the edge, without relying on cloud APIs." data-pl="Potrzeba przetwarzania obrazu AI w czasie rzeczywistym na urządzeniu brzegowym, bez korzystania z API chmurowych.">Need for real-time AI image processing at the edge, without relying on cloud APIs.</span></li>
+          <li><strong data-en="Solution:" data-pl="Rozwiązanie:">Solution:</strong> <span data-en="USB camera emulator that intercepts the video stream, applies AI transformations on-device, and outputs a processed feed — transparent to applications." data-pl="Emulator kamery USB przechwytujący strumień wideo, stosujący transformacje AI bezpośrednio na urządzeniu i zwracający przetworzone wyjście — transparentnie dla aplikacji.">USB camera emulator that intercepts the video stream, applies AI transformations on-device, and outputs a processed feed — transparent to applications.</span></li>
+          <li><strong data-en="Stack:" data-pl="Stack:">Stack:</strong> Python · Raspberry Pi · OpenCV · Linux</li>
+          <li><strong data-en="Result:" data-pl="Wynik:">Result:</strong> <span data-en="Edge AI processing with no cloud dependency. Low-latency real-time video transformation." data-pl="Przetwarzanie AI na brzegu sieci bez zależności od chmury. Transformacja wideo w czasie rzeczywistym z niskim opóźnieniem.">Edge AI processing with no cloud dependency. Low-latency real-time video transformation.</span></li>
         </ul>
       </div>
 
       <div class="project">
         <h3>Hardware Random Generator (Teensy)</h3>
         <ul>
-          <li><strong>Problem:</strong> Software PRNGs are not truly random — insufficient for cryptographic or security-sensitive use cases.</li>
-          <li><strong>Solution:</strong> Microcontroller-based entropy source using hardware noise. Data exposed via USB interface (migrating to Ethernet) and consumed by backend services.</li>
-          <li><strong>Stack:</strong> Teensy · C++ · Python · USB/Ethernet</li>
-          <li><strong>Result:</strong> True hardware entropy source integrated with software backend.</li>
+          <li><strong data-en="Problem:" data-pl="Problem:">Problem:</strong> <span data-en="Software PRNGs are not truly random — insufficient for cryptographic or security-sensitive use cases." data-pl="Programowe generatory liczb pseudolosowych nie są naprawdę losowe — niewystarczające do zastosowań kryptograficznych i bezpieczeństwa.">Software PRNGs are not truly random — insufficient for cryptographic or security-sensitive use cases.</span></li>
+          <li><strong data-en="Solution:" data-pl="Rozwiązanie:">Solution:</strong> <span data-en="Microcontroller-based entropy source using hardware noise. Data exposed via USB interface (migrating to Ethernet) and consumed by backend services." data-pl="Źródło entropii oparte na mikrokontrolerze, wykorzystujące szum sprzętowy. Dane udostępniane przez interfejs USB (migracja do Ethernet) i konsumowane przez serwisy backendowe.">Microcontroller-based entropy source using hardware noise. Data exposed via USB interface (migrating to Ethernet) and consumed by backend services.</span></li>
+          <li><strong data-en="Stack:" data-pl="Stack:">Stack:</strong> Teensy · C++ · Python · USB/Ethernet</li>
+          <li><strong data-en="Result:" data-pl="Wynik:">Result:</strong> <span data-en="True hardware entropy source integrated with software backend." data-pl="Prawdziwe sprzętowe źródło entropii zintegrowane z backendem.">True hardware entropy source integrated with software backend.</span></li>
         </ul>
       </div>
 
     </section>
 
     <section>
-      <h2>Skills</h2>
+      <h2 data-en="Skills" data-pl="Umiejętności">Skills</h2>
       <div class="skills-grid">
         <div class="skill-group">
-          <h4>Infrastructure</h4>
+          <h4 data-en="Infrastructure" data-pl="Infrastruktura">Infrastructure</h4>
           <ul>
             <li>Kubernetes</li>
             <li>Rancher</li>
@@ -148,15 +136,15 @@
           </ul>
         </div>
         <div class="skill-group">
-          <h4>CI/CD &amp; Automation</h4>
+          <h4 data-en="CI/CD &amp; Automation" data-pl="CI/CD i Automatyzacja">CI/CD &amp; Automation</h4>
           <ul>
             <li>GitHub Actions</li>
-            <li>Bash scripting</li>
+            <li data-en="Bash scripting" data-pl="Skrypty Bash">Bash scripting</li>
             <li>Linux</li>
           </ul>
         </div>
         <div class="skill-group">
-          <h4>Development</h4>
+          <h4 data-en="Development" data-pl="Programowanie">Development</h4>
           <ul>
             <li>Python</li>
             <li>Django</li>
@@ -165,7 +153,7 @@
           </ul>
         </div>
         <div class="skill-group">
-          <h4>Networking</h4>
+          <h4 data-en="Networking" data-pl="Sieci">Networking</h4>
           <ul>
             <li>DNS, TCP/IP</li>
             <li>Reverse Proxy</li>
@@ -181,7 +169,7 @@
           </ul>
         </div>
         <div class="skill-group">
-          <h4>Industrial</h4>
+          <h4 data-en="Industrial" data-pl="Przemysł">Industrial</h4>
           <ul>
             <li>PLC (Allen Bradley)</li>
             <li>Siemens TIA Portal</li>
@@ -192,13 +180,69 @@
     </section>
 
     <section>
-      <h2>Languages</h2>
+      <h2 data-en="Experience" data-pl="Doświadczenie">Experience</h2>
+
+      <div class="project">
+        <div class="exp-header">
+          <h3 data-en="DevOps / Platform Engineer" data-pl="Inżynier DevOps / Platform">DevOps / Platform Engineer</h3>
+          <span class="exp-date" data-en="2022 – Present" data-pl="2022 – Obecnie">2022 – Present</span>
+        </div>
+        <p class="exp-company">Self-employed / Freelance</p>
+        <ul>
+          <li data-en="Built and operated self-hosted Kubernetes cluster (Rancher)" data-pl="Zbudowałem i zarządzałem własnym klastrem Kubernetes (Rancher)">Built and operated self-hosted Kubernetes cluster (Rancher)</li>
+          <li data-en="Developed IoT and home automation systems (Django, MQTT)" data-pl="Rozwijałem systemy IoT i automatyki domowej (Django, MQTT)">Developed IoT and home automation systems (Django, MQTT)</li>
+          <li data-en="Implemented CI/CD pipelines with GitHub Actions" data-pl="Wdrożyłem pipeline'y CI/CD z GitHub Actions">Implemented CI/CD pipelines with GitHub Actions</li>
+          <li data-en="Integrated embedded hardware (Raspberry Pi, Teensy) with backend services" data-pl="Zintegrowałem sprzęt wbudowany (Raspberry Pi, Teensy) z serwisami backendowymi">Integrated embedded hardware (Raspberry Pi, Teensy) with backend services</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="exp-header">
+          <h3 data-en="Industrial Automation Engineer" data-pl="Inżynier Automatyki Przemysłowej">Industrial Automation Engineer</h3>
+          <span class="exp-date">2018 – 2022</span>
+        </div>
+        <p class="exp-company">— (add company name) —</p>
+        <ul>
+          <li data-en="Programmed PLCs: Allen Bradley (Studio 5000), Siemens (TIA Portal)" data-pl="Programowałem sterowniki PLC: Allen Bradley (Studio 5000), Siemens (TIA Portal)">Programmed PLCs: Allen Bradley (Studio 5000), Siemens (TIA Portal)</li>
+          <li data-en="Mechanical design and documentation in Autodesk Inventor" data-pl="Projektowanie mechaniczne i dokumentacja w Autodesk Inventor">Mechanical design and documentation in Autodesk Inventor</li>
+          <li data-en="Commissioning and troubleshooting of industrial automation systems" data-pl="Uruchamianie i diagnostyka przemysłowych systemów automatyki">Commissioning and troubleshooting of industrial automation systems</li>
+          <li data-en="HMI development and SCADA integration" data-pl="Tworzenie interfejsów HMI i integracja SCADA">HMI development and SCADA integration</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section>
+      <h2 data-en="Languages" data-pl="Języki">Languages</h2>
       <ul class="tag-list">
-        <li>Polish — Native</li>
-        <li>English — Professional</li>
+        <li data-en="Polish — Native" data-pl="Polski — Ojczysty">Polish — Native</li>
+        <li data-en="English — Professional" data-pl="Angielski — Zawodowy">English — Professional</li>
       </ul>
     </section>
 
   </div>
+
+  <script>
+    const toggle = document.getElementById('langToggle');
+    let lang = localStorage.getItem('cv-lang') || 'en';
+
+    function applyLang(l) {
+      document.querySelectorAll('[data-en]').forEach(el => {
+        el.innerHTML = el.getAttribute('data-' + l);
+      });
+      document.documentElement.lang = l;
+      toggle.textContent = l === 'en' ? 'PL' : 'EN';
+      localStorage.setItem('cv-lang', l);
+    }
+
+    // apply on load if saved
+    if (lang === 'pl') applyLang('pl');
+
+    toggle.addEventListener('click', () => {
+      lang = lang === 'en' ? 'pl' : 'en';
+      applyLang(lang);
+    });
+  </script>
+
 </body>
 </html>
