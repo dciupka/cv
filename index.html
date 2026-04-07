@@ -9,9 +9,11 @@
 </head>
 <body>
 
+  <div class="print-page-margin"></div>
+
   <div class="top-controls">
-    <a class="print-btn" href="dawid-ciupka-cv.pdf" download="dawid-ciupka-cv.pdf"
-       data-en="Download PDF" data-pl="Pobierz PDF">Download PDF</a>
+    <button class="print-btn" onclick="window.print()"
+       data-en="Download PDF" data-pl="Pobierz PDF">Download PDF</button>
     <button class="lang-btn" id="langToggle">PL</button>
   </div>
 
@@ -23,33 +25,49 @@
 
     <header>
       <div class="header-main">
-        <div class="header-text">
-          <div class="screen-only">
+        <!-- print only: plain name + title -->
+        <div class="print-only">
+          <h1>Dawid Ciupka</h1>
+          <p class="title">DevOps / Platform Engineer</p>
+        </div>
+
+        <!-- screen: badge + tagline/contact side by side -->
+        <div class="header-text screen-only">
+          <div class="header-badge">
             <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="dawid-ciupka" data-version="v1">
               <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/dawid-ciupka" target="_blank"></a>
             </div>
           </div>
-          <div class="print-only">
-            <h1>Dawid Ciupka</h1>
-            <p class="title">DevOps / Platform Engineer</p>
+          <div class="header-info">
+            <p class="tagline"
+               data-en="I build systems, automate everything, and make infrastructure actually work."
+               data-pl="Buduję systemy, automatyzuję wszystko i sprawiam, że infrastruktura faktycznie działa.">
+              I build systems, automate everything, and make infrastructure actually work.
+            </p>
+            <div class="contact">
+              <a href="https://github.com/dciupka" target="_blank">GitHub</a>
+              <a href="mailto:dawidciupka@gmail.com">dawidciupka@gmail.com</a>
+              <a href="tel:+48794219389">+48 794 219 389</a>
+              <span class="contact-location" data-en="Wrocław, Poland" data-pl="Wrocław, Polska">Wrocław, Poland</span>
+            </div>
           </div>
+        </div>
+
+        <!-- print: tagline + contact -->
+        <div class="print-only">
           <p class="tagline"
              data-en="I build systems, automate everything, and make infrastructure actually work."
              data-pl="Buduję systemy, automatyzuję wszystko i sprawiam, że infrastruktura faktycznie działa.">
             I build systems, automate everything, and make infrastructure actually work.
           </p>
           <div class="contact">
-            <a href="https://dciupka.github.io/cv/" 
-   target="_blank" 
-   class="print-only" 
-   data-en="Interactive Portfolio & Projects" 
-   data-pl="Interaktywne Portfolio i Projekty">
-   Interactive Portfolio & Projects
-</a>
+            <a href="https://dciupka.github.io/cv/" target="_blank"
+               data-en="Interactive Portfolio & Projects"
+               data-pl="Interaktywne Portfolio i Projekty">Interactive Portfolio &amp; Projects</a>
             <a href="https://github.com/dciupka" target="_blank">GitHub</a>
             <a href="mailto:dawidciupka@gmail.com">dawidciupka@gmail.com</a>
             <a href="tel:+48794219389">+48 794 219 389</a>
-            <a href="https://www.linkedin.com/in/dawid-ciupka" target="_blank" class="print-only">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/dawid-ciupka" target="_blank">LinkedIn</a>
           </div>
         </div>
       </div>
