@@ -53,11 +53,26 @@ header {
 
 .header-main {
   display: flex;
-  gap: 1.5rem;
-  align-items: flex-start;
+  flex-direction: column;
+  gap: 0;
 }
 
 .header-text {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.header-badge {
+  flex-shrink: 0;
+}
+
+.header-info {
   flex: 1;
   min-width: 0;
 }
@@ -119,6 +134,14 @@ header h1 {
 .contact a:hover {
   background: var(--accent-muted);
   color: #fff;
+}
+
+.contact-location {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  border: 1px solid var(--border);
+  padding: 0.2rem 0.7rem;
+  border-radius: 4px;
 }
 
 /* Sections */
@@ -270,6 +293,14 @@ section p {
   display: block;
 }
 
+.header-text.screen-only {
+  display: flex;
+}
+
+.print-page-margin {
+  display: none;
+}
+
 /* Top controls (Download + Lang toggle) */
 .top-controls {
   position: fixed;
@@ -289,6 +320,9 @@ section p {
   font-size: 0.82rem;
   font-weight: 600;
   transition: background 0.15s;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .print-btn:hover {
@@ -341,7 +375,7 @@ section p {
 /* Print / PDF */
 @media print {
   @page {
-    margin: 1.8cm 2cm;
+    margin: 1.5cm 2cm;
     size: A4;
   }
 
@@ -415,6 +449,7 @@ section p {
     color: #1a56db;
     font-size: 9.5pt;
   }
+
 
   section {
     margin-bottom: 1.2rem;
