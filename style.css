@@ -212,6 +212,16 @@ section p {
   color: var(--text);
 }
 
+.project a {
+  color: var(--accent);
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
 /* Experience header (role + date) */
 .exp-header {
   display: flex;
@@ -512,6 +522,11 @@ section p {
 
   .project ul li strong {
     color: #111;
+  }
+
+  .project a {
+    color: #1a56db;
+    text-decoration: none;
   }
 
   .exp-date {
