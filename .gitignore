@@ -1,0 +1,11 @@
+# Local-only visual editor (kept off the public GitHub Pages site)
+editor.html
+editor.js
+editor.css
+editor-server.js
+
+# PDF output
+dawid-ciupka-cv.pdf
+
+# Node
+node_modules/
